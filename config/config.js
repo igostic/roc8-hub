@@ -1,6 +1,6 @@
 //config for development and production mongodb
 const config = {
-  env: process.env.NODE_ENV || "development",
+  env: process.env.NODE_ENV || "production",
   port: process.env.PORT || 3000,
   jwtSecret: process.env.JWT_SECRET || "JWT123",
   mongoUri:
