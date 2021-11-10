@@ -1,16 +1,10 @@
 //config for development and production mongodb
 const config = {
-  env: process.env.NODE_ENV || "production",
-  port: process.env.PORT || 3000,
-  jwtSecret: process.env.JWT_SECRET || "JWT123",
+  env: process.env.NODE_ENV,
+  port: process.env.PORT,
+  jwtSecret: "JWT123",
   mongoUri:
-    process.env.MONGODB_URI ||
-    process.env.MONGO_HOST ||
-    "mongodb://" +
-      (process.env.IP || "localhost") +
-      ":" +
-      (process.env.MONGO_PORT || "27017") +
-      "/mernproject",
+    "mongodb+srv://prakhar:Hum77hai%40online@roc8.nkfuj.mongodb.net/socialnetwork?retryWrites=true&w=majority",
 };
 
 export default config;
